@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alphabet canvas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background: white;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+        gap: 2rem;
+      }
+      #canvas {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="select">
+      <option value="">-</option>
+    </select>
+    <section>
+      <input id="animate" type="checkbox" />
+      <label for="animate">Should animate?</label>
+    </section>
+    <canvas id="canvas"></canvas>
+    <script src="./alphabet.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
